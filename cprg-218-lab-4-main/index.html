@@ -4,36 +4,85 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
-  <link rel="stylesheet" type="text/css" href="/styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
   <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
-  <title>Common Website Features</title>
+  <link rel="stylesheet" type="text/css" href="styles/lab4.css">
+  <script src="accordion.js" defer></script>
+  <script src="footer.js" defer></script>
+  <script src="https://kit.fontawesome.com/1424b7e4b4.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+</style>
+  <title>La Dolce Far Niente</title>
 </head>
 <body>
   <section class="hero-container">
-    <!-- Remove and add hero banner HTML -->
-    <div class="remove-assignment-content">
-      <h1>Hero Banner</h1>
-    </div>
+    <div class="hero-banner">
+      <img src="./assets/pexels-silvia-trigo-1296200.jpg" alt="Panoramic View of the Coast of Campania, Italy." class="hero-image">
+      <div class="hero-content">
+          <h1 class="hero-header">La Dolce Far Niente</h1>
+          <p class="hero-subheader">Discover amazing experiences in Italy</p>
+      </div>
   </section>
   <section class="container content-container">
-    <!-- Remove and add content HTML -->
-    <div class="remove-assignment-content">
-      <h1>Content</h1>
-    </div>
+    <div class="content-section">
+      <h2 class="section-header">Explore Italy</h2>
+      <img src="./assets/pexels-anastasiya-lobanovskaya-804954.jpg" alt="View of white and orange buildings in Venice, Italy" class="section-image">
+      <p class="section-paragraph">Italy is a beautiful country known for its rich history, stunning architecture, delicious cuisine, and picturesque landscapes. Italy is a traveler's paradise, boasting a rich tapestry of culture, history, and natural beauty. From the enchanting canals of Venice to the ancient ruins of Rome, each corner of Italy offers a unique and captivating experience. Indulge in the culinary delights of authentic Italian cuisine, sip on fine wines in Tuscany's rolling vineyards, or marvel at the stunning landscapes of the Amalfi Coast.</p>
+      <a href="https://www.touristitaly.com/" target="_blank" rel="noopener noreferrer">
+      <button>
+          <span class="button_top">Explore More</span>
+      </button>
+    </a>
+  </div>
   </section>
   <section class="container accordion-container">
-    <!-- Remove and add accordion HTML -->
-    <div class="remove-assignment-content">
-      <h1>Accordion</h1>
-    </div>
+    <div class="accordion">
+      <h2 class="accordion-title">Most Visited Destinations</h2>
+      <div class="accordion-item">
+          <div class="accordion-header">Rome <i class="fas fa-circle-down"></i></div>
+          <div class="accordion-content">
+              <p>Rome, the capital city of Italy, is famous for its ancient history, stunning architecture, and vibrant culture. Explore iconic landmarks such as the Colosseum, Roman Forum, and Vatican City.</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <div class="accordion-header">Florence <i class="fas fa-circle-down"></i></div>
+          <div class="accordion-content">
+              <p>Florence, known as the birthplace of the Renaissance, is renowned for its art, architecture, and historical significance. Visit the Uffizi Gallery, Ponte Vecchio, and the magnificent Florence Cathedral.</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <div class="accordion-header">Venice <i class="fas fa-circle-down"></i></div>
+          <div class="accordion-content">
+              <p>Venice, the city of canals, captivates visitors with its romantic atmosphere, picturesque bridges, and grand palaces. Explore the iconic St. Mark's Square, take a gondola ride along the canals, and visit the vibrant Rialto Market.</p>
+          </div>
+      </div>
+  </div>
   </section>
   <section class="footer-container">
-    <!-- Remove and add footer HTML -->
-    <div class="remove-assignment-content">
-      <h1>Footer</h1>
-    </div>
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.619790608347!2d12.480698026318622!3d41.901033271239264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2sTrevi%20Fountain!5e0!3m2!1sen!2sca!4v1709757937529!5m2!1sen!2sca" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; <span id="copyright-year"></span> La Dolce Far Niente</p>
+          </div>
+      </div>
+  </footer>
   </section>
 </body>
 </html>
